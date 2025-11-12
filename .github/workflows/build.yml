@@ -13,7 +13,7 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install --upgrade pip
       - run: pip install -r requirements.txt
-      - run: pyinstaller --onefile --windowed app/MonoColourLUT_GUI.py --name MonoColourLUT
+      - run: pyinstaller --onefile --windowed MonoColourLUT_GUI.py --name MonoColourLUT
       - run: |
           mkdir dist_pkg
           copy dist\MonoColourLUT.exe dist_pkg\
